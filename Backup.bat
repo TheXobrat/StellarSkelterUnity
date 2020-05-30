@@ -1,4 +1,4 @@
-::@echo off
+@echo off
 for %%a in ("%cd%") do set "CurDir=%%~nxa"
 
 git pull --set-upstream origin master
@@ -14,5 +14,8 @@ git push thumbdrive master
 
 cd /D E:\%CurDir%
 git reset --hard master
+
+cd /D D:\%CurDir%
+git push origin master
 
 pause
