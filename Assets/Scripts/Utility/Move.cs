@@ -5,6 +5,7 @@ using UnityEngine;
 public class Move : MonoBehaviour
 {
     public Vector2 speed;
+    public bool relative;
 
 
     void Start()
@@ -14,6 +15,6 @@ public class Move : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(speed * Time.deltaTime);
+        transform.Translate(speed * Time.deltaTime, relative ? Space.Self : Space.World);
     }
 }

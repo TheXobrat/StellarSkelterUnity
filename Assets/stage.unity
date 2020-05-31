@@ -189,6 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3b82727be60ac4d9360951a6b9f7e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeSpeed: 0.1
 --- !u!225 &16503656
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -707,7 +708,7 @@ MonoBehaviour:
     scoreRequired: 1000
   - gameObject: {fileID: 420622318468310925, guid: e95d6982b03dd5d41979a0fa25c9b5fe,
       type: 3}
-    spawnChance: 5
+    spawnChance: 2
     scoreRequired: 3000
   spawnRate: 0.75
 --- !u!1 &1323769649
@@ -1137,6 +1138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3b82727be60ac4d9360951a6b9f7e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeSpeed: 0.1
 --- !u!225 &1625967703
 CanvasGroup:
   m_ObjectHideFlags: 0

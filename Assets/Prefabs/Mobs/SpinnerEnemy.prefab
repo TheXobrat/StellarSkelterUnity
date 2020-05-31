@@ -204,7 +204,7 @@ MonoBehaviour:
   faceForward: 0
   shots: 4
   bullets:
-  - {fileID: 4745431078606781798, guid: 2e77efa8b1f1533419e7456820441dfe, type: 3}
+  - {fileID: 4745431078606781798, guid: 6966f3c3fea5a3c40b7777ab2121c956, type: 3}
   muzzles:
   - {fileID: 8614694461459637939}
   - {fileID: 1053965896989089269}

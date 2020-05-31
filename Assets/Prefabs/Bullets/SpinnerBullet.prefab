@@ -9,14 +9,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4745431078606781818}
-  - component: {fileID: -6843673563092317978}
   - component: {fileID: 4745431078606781820}
-  - component: {fileID: 7459827117848201819}
-  - component: {fileID: -4297597939439468189}
-  - component: {fileID: 6744011054302252423}
-  - component: {fileID: 8017213203452439804}
+  - component: {fileID: -1730525577162940009}
+  - component: {fileID: 6020692656965865827}
+  - component: {fileID: 1670121390179373328}
+  - component: {fileID: 3931963436318270786}
+  - component: {fileID: 2373776049392674220}
   m_Layer: 0
-  m_Name: PlayerBullet
+  m_Name: SpinnerBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,32 +36,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &-6843673563092317978
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4745431078606781798}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.06451613, y: 0.06451613}
-    newSize: {x: 14, y: 0.14}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.0625, y: 0.0625}
-  m_EdgeRadius: 0
 --- !u!114 &4745431078606781820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,8 +48,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f262e69c52a2a0a4c8ee32b33a0c6779, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  remains: {fileID: 8268892319672474094, guid: 3416fa188b5b53548b63eb48f9558c4e, type: 3}
---- !u!114 &7459827117848201819
+  remains: {fileID: 8268892319672474094, guid: dfc6c71ed59bc11428d11260b9c3e7cc, type: 3}
+--- !u!114 &-1730525577162940009
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -88,7 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 5
---- !u!114 &-4297597939439468189
+--- !u!114 &6020692656965865827
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,9 +74,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61dc95618374fe41a0b0c3f23728e32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0
+  time: 3
   isVisible: 0
---- !u!212 &6744011054302252423
+--- !u!212 &1670121390179373328
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,7 +94,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 062beb3068dccf7418500c43ba0ab6fc, type: 2}
+  - {fileID: 2100000, guid: 8a3abbd183a821143be92694a272dd3c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -146,13 +120,39 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 14, y: 0.14}
+  m_Size: {x: 0.0625, y: 0.0625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8017213203452439804
+--- !u!61 &3931963436318270786
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4745431078606781798}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.06451613, y: 0.06451613}
+    newSize: {x: 0.0625, y: 0.0625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.0625, y: 0.0625}
+  m_EdgeRadius: 0
+--- !u!114 &2373776049392674220
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,5 +164,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 238a1d2a545bb0d4db0af6c978a90462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 0, y: 20}
+  speed: {x: 0, y: 5}
   relative: 1

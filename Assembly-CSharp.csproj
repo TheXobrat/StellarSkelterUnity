@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\Utility\EnableComponentAfterTime.cs" />
     <Compile Include="Assets\Scripts\Utility\FpsCounter.cs" />
     <Compile Include="Assets\Scripts\Utility\Move.cs" />
+    <Compile Include="Assets\Scripts\Utility\MoveOnCurve.cs" />
     <Compile Include="Assets\Scripts\Utility\Rotate.cs" />
     <None Include="Assets\Audio\Space Ambient Album - 101218\Notes.txt" />
     <None Include="Assets\UI\Pixel Font - Tripfive\_README.txt" />
