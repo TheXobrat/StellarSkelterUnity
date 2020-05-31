@@ -32,7 +32,6 @@ cls
 echo Pushing commit to E:/%CurDir%...
 git push thumbdrive master
 cd /D E:\%CurDir%
-git pull --set-upstream origin master
 git reset --hard master
 echo Commit successfully pushed to E:/%CurDir%! Press any key to continue...
 pause >nul
